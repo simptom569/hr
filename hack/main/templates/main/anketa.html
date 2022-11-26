@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заявка</title>
+    <link rel="stylesheet" href="{% static 'main/anketa.css' %}">
+</head>
+<body>
+    <header class="header">
+        <div class="div-logo">
+            <div class="div-logo1">
+                <img src="{% static 'main/img/logo.png' %}" class="logo" height="70px">
+            </div>
+            <div class="div-logo-text">
+                <span class="logo-text">Webant</span>
+            </div>
+        </div>
+        <div class="div-number">
+            <div class="div-number">
+                <span class="number">+7(960)466-01-00</span>
+            </div>
+            <div class="div-number-photo">
+                <img src="{% static 'main/img/logo.png' %}" height="70px" width="70px">
+            </div>
+        </div>
+    </header>
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+    <div class="container">
+        <div class="cont1">
+            <div class="div-name">
+                <span class="text">ФИО:</span><br>
+                <input type="text" name="name" class="in">
+            </div>
+            <div class="div-name">
+                <span class="text">Возраст:</span><br>
+                <input type="text" name="age" class="in">
+            </div>
+            <div class="div-name">
+                <span class="text">Телефон:</span><br>
+                <input type="text" name="phone" class="in">
+            </div>
+            <div class="div-name">
+                <span class="text">Женский:</span>
+                <input type="radio" name="gender" class="gender" value="Женский"><br>
+                <span class="text">Мужской:</span>
+                <input type="radio" name="gender" class="gender" value="Мужской">
+            </div>
+            <div class="div-name">
+                <span class="text">Вакансия</span><br>
+                <select name="vakan" class="vakan">
+                    <option value="INTERN Backend">INTERN Backend</option>
+                    <option value="JUNIOR Backend">JUNIOR Backend</option>
+                    <option value="MIDDLE Backend">MIDDLE Backend</option>
+                    <option value="INTERN Frontend">INTERN Frontend</option>
+                    <option value="JUNIOR Frontend">JUNIOR Frontend</option>
+                    <option value="MIDDLE Frontend">MIDDLE Frontend</option>
+                    <option value="INTERN Flutter">INTERN Flutter</option>
+                    <option value="JUNIOR Flutter">JUNIOR Flutter</option>
+                    <option value="MIDDLE Flutter">MIDDLE Flutter</option>
+                    <option value="INTERN Android">INTERN Android</option>
+                    <option value="JUNIOR Android">JUNIOR Android</option>
+                    <option value="MIDDLE Android">MIDDLE Android</option>
+                    <option value="INTERN IOS">INTERN IOS</option>
+                    <option value="JUNIOR IOS">JUNIOR IOS</option>
+                    <option value="MIDDLE IOS">MIDDLE IOS</option>
+                    <option value="DevOps Engineer">DevOps Engineer</option>
+                    <option value="Project manager">Project manager</option>
+                    <option value="QA Engineer">QA Engineer</option>
+                    <option value="Офис - менеджер">Офис - менеджер</option>
+                </select>
+            </div>
+            <div class="div-name">
+                <span class="text">CV:</span><br>
+                <input type="file" name="file" class="file">
+            </div>
+            </div>
+        <div class="cont2">
+            <div class="cont3">
+                <img src="{% static 'main/img/logo.png' %}" width="100px" class="ava">      
+            </div>
+            <div class="div-name2">
+                <input type="file" name="avatar" class="avatar">
+            </div>
+            <div class="div-button">
+                <button class="button">Отправить</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

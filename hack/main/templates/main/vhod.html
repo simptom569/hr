@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Авторизация</title>
+    <link rel="stylesheet" href="{% static 'main/vhod.css' %}">
+</head>
+<body>
+    <div class="container">
+		<div class="warper">
+			<header class="header">
+				<div class="div-logo">
+					<div class="div-logo1">
+						<img src="{% static 'main/img/logo.png' %}" class="logo" height="70px">
+					</div>
+					<div class="div-logo-text">
+						<span class="logo-text">Webant</span>
+					</div>
+				</div>
+				<div class="div-main">
+					<span class="main">Главная</span>
+				</div>
+				<div class="div-contact">
+					<span class="contact">Контакты</span>
+				</div>
+				<div class="div-number">
+					<div class="div-number">
+						<span class="number">+7(960)466-01-00</span>
+					</div>
+					<div class="div-number-photo">
+						<img src="{% static 'main/img/logo.png' %}" height="70px" width="70px">
+					</div>
+				</div>
+			</header>
+			<div class="con">
+			<div class="content">
+				<div class="content1">
+					<div class="div-auth">
+						<span class="auth">Авторизация</span>
+					</div>
+				</div>
+				<div class="user_avatar">
+					<div class="div-avatar">
+						<img src="{% static 'main/img/logo.png' %}" height="70px" class="avatar">
+					</div>
+				</div>
+				<form action="" method="post">
+					{% csrf_token %}
+				<div class="inputs">
+					
+						
+						<input type="text" name="login" class="login" placeholder="login"br>
+						<input type="text" name="password" class="password" placeholder="password">
+					
+				</div>
+				<div class="div-button">
+					<button class="button">Войти</button>
+				</div>
+				</form>
+				<div class="footer">
+					<p class="text-foot"><a href="{% url 'regist' %}">Зарегестрироваться</a></p>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</body>    
+</html>

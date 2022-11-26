@@ -1,0 +1,108 @@
+body, html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    width: 100%;
+    border-bottom: 1px solid orangered;
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-logo{
+    margin-left: 20px;
+    display: flex;
+}
+
+.div-logo-text{
+    margin-left: 20px;
+}
+
+.div-number{
+    margin-right: 20px;
+    display: flex;
+}
+
+.main, .logo-text, .contact, .rezume, .number{
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 70px;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: aqua;
+}
+
+.div-select{
+    height: 100%;
+    width: 30%;
+    background-color: blue;
+}
+
+.div-rezume{
+    background-color: darkmagenta;
+    width: 70%;
+}
+
+.select{
+    overflow: visible;
+    position: relative;
+    border-radius: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    margin-top: 25px;
+    height: 38px;
+    background-color: bisque;
+    transition: 0.5s;
+}
+
+.select1{
+    overflow: visible;
+    position: relative;
+    border-radius: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    margin-top: 25px;
+    height: 38px;
+    background-color: bisque;
+}
+
+.select-text{
+    left: 10px;
+    top: 9px;
+    position: absolute;
+}
+
+.select-des{
+    transition: 0.5s;
+    opacity: 0;
+    left: 10px;
+    top: -20%;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.select:hover .select-des{
+    line-height: 1.4;
+    opacity: 1;
+    top: 40px;
+}
+
+.select:hover{
+    height: 120px;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}

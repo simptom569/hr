@@ -1,0 +1,147 @@
+body, html{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.container{
+    background-color: #e4e4e4;
+    height: 100vh;
+}
+
+.header{
+    position: relative;
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-logo{
+    margin-left: 20px;
+    display: flex;
+}
+
+.div-logo-text{
+    margin-left: 20px;
+}
+
+.div-number{
+    margin-right: 20px;
+    display: flex;
+}
+
+.main, .logo-text, .contact, .rezume, .number{
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 70px;
+}
+
+.content{
+    padding: 0;
+    border-radius: 40px;
+    border: solid 2px orangered;
+    width: 400px;
+    height: 480px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    background-color: #bbb6b6;
+    position: absolute;
+    display: table;
+}
+
+.content1{
+    display: flex;
+    margin: 0;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    height: 80px;
+    text-align: center;
+    background-color: #d9d9d9;
+}
+
+.con{
+    position: relative;
+}
+
+.div-auth{
+    border-bottom: 2px solid orangered;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.auth{
+    color: black;
+    font-size: 26px;
+    font-weight: bold
+}
+
+.user_avatar{
+    margin-top: 40px;
+    width: 100%;
+}
+
+.div-avatar{
+    border-radius: 40px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px;
+    background-color: #bbb6b6;
+}
+
+.inputs{
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.login, .password, .email{
+    background-color: #d9d9d9;
+    border: 0;
+    width: 72%;
+    font-size: 20px;
+    border-radius: 10px;
+    line-height: 40px;
+}
+
+.password, .email{
+    margin-top: 30px;
+}
+
+.div-button{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.button{
+    margin-top: 30px;
+    border-radius: 13px;
+    border: 0;
+    width: 55%;
+    height: 38px;
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+}
+
+.text-foot{
+    text-decoration: 2px underline;
+    text-decoration-color: orangered;
+    font-size: 18px;
+}
+
+a:active, /* активная/посещенная ссылка */
+a:hover,  /* при наведении */
+a{
+    text-decoration: 2px underline;
+    text-decoration-color: orangered;
+    color: black;
+}
+
+::-webkit-input-placeholder {
+    text-align:center;
+    }

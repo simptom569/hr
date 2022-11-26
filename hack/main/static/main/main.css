@@ -1,0 +1,218 @@
+body, html{
+    padding: 0;
+    margin: 0;
+}
+
+.container1{
+    height: 100vh;
+}
+
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    z-index: 99;
+}
+
+.div-menu{
+    margin-right: 20px;
+    display: flex;
+}
+
+.div-logo{
+    margin-left: 20px;
+    display: flex;
+}
+
+.contact, .rezume, .number, .name{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.name{
+    margin-left: 20px;
+}
+
+.number{
+    margin-right: 20px;
+}
+
+.div-main{
+    padding: 0;
+    position: relative;
+    height: 100%;
+    background-image: url("img/bg-main.jpg");
+    background-size: cover;
+}
+
+.div-slogan{
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+}
+
+.slogan{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.container2{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.map{
+    height: 100vh;
+    width: 100%;
+}
+
+.container3{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.div-feedbacks{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.div-feedback{
+    border: 1px double black;
+    border-radius: 40px;
+    width: 300px;
+    background-color: black;
+    height: 350px;
+}
+
+.tizer-photo{
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-image: url("img/tizer.png");
+    background-size: contain;
+    height: 55%;
+}
+
+.auto-photo{
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-image: url("img/auto.png");
+    background-size: contain;
+    height: 55%;
+}
+
+.global-photo{
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-image: url("img/global.png");
+    background-size: contain;
+    height: 55%;
+}
+
+.raznay-photo{
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-image: url("img/raznay.png");
+    background-size: contain;
+    height: 55%;
+}
+
+.medx-photo{
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-image: url("img/medx.png");
+    background-size: contain;
+    height: 55%;
+}
+
+.krch-photo{
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-image: url("img/krch.png");
+    background-size: contain;
+    height: 55%;
+}
+
+.feedback-name{
+    margin-left: 10px;
+    margin-top: 5px;
+    font-weight: bolder;
+    color: white;
+    margin-bottom: 0;
+}
+
+.feedback-decription{
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 13px;
+    color: white;
+}
+
+.feedback-tags{
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-left: 20px;
+    color: yellow;
+}
+
+.div-contacts{
+    top: 50%;
+    left: 10%;
+    border-radius: 40px;
+    position: absolute;
+    width: 28%;
+    height: 70vh;
+    background-color: gray;
+    transform:translate(-0%, -50%);
+}
+
+.div-adress{
+    margin-top: 40px;
+    margin-left: 25px;
+}
+
+.contacts-name{
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.contacts-desc{
+    color: burlywood;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: underline;
+    text-decoration-color: burlywood;
+}
+
+.div-soc{
+    margin-left: 20px;
+    bottom: 0;
+    position: absolute;
+}
+
+a:active, /* активная/посещенная ссылка */
+a:hover,  /* при наведении */
+a{
+    text-decoration: none;
+    color: black;
+}
+
+::-webkit-scrollbar{
+	width: 0px;
+}

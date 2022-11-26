@@ -1,0 +1,117 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{% static 'main/main.css' %}">
+    <script src="{% static 'main/main.js' %}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Main</title>
+</head>
+<body>
+    <div class="container1">
+        <div class="header">
+            <div class="div-logo">
+                <img src="{% static 'main/img/logo.png' %}" height="70px" width="auto" class="logo">
+                <p class="name">Webant</p>
+            </div>
+            <div class="div-contact">
+                <p class="contact">Контакты</p>
+            </div>
+            <div class="div-rezume">
+                {% if acc %}
+                <p class="rezume"><a href="{% url 'create' %}">Оставить резюме</a></p>
+                {% else %}
+                <p class="rezume"><a href="{% url 'vhod' %}">Войти</a></p>
+                {% endif %}
+            </div>
+            <div class="div-menu">
+                <p class="number">+7(960)466-01-00</p>
+                <img src="{% static 'main/img/mo.png' %}" height="70px" width="auto" class="dark">
+            </div>
+        </div>
+        <div class="div-main">
+            <div class="div-slogan">
+                <p class="slogan">Сотни отзывов, сотни<br>положительных<br><br>И ты еще думаешь?</p>
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="div-contacts">
+            <div class="div-adress">
+                <p class="contacts-name">Адрес</p>
+                <p class="contacts-desc">Ростов-На-Дону,<br>пер.Кировский 35/113</p>
+            </div>
+            <div class="div-adress">
+                <p class="contacts-name">Телефон</p>
+                <p class="contacts-desc">+7(960)466-01-00</p>
+            </div>
+            <div class="div-adress">
+                <p class="contacts-name">E-mail</p>
+                <p class="contacts-desc">v@webant.ru</p>
+            </div>
+            <div class="div-soc">
+                <img src="{% static 'main/img/tg.png' %}" height="50px" width="auto">
+                <img src="{% static 'main/img/wh.png' %}" height="50px" width="auto">
+            </div>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2709.5683529057674!2d39.72800821513823!3d47.22502762225256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b932f0c7d9c5%3A0xabf5f8866e44c44c!2sWebAnt!5e0!3m2!1sru!2sru!4v1669329210045!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+    </div>
+    <div class="container3">
+        <div class="div-feedbacks">
+            <div class="div-feedback">
+                <div class="tizer-photo"></div>
+                <p class="feedback-name">Мобильное приложение Тизер.Авто</p>
+                <p class="feedback-decription">Автоматизированный инструмент для дистанционных продаж автомобилей и нормочасов с помощью видео. Возможности сервиса:...</p>
+                <p class="feedback-tags">#QA</p>
+                <p class="feedback-tags">#Startup</p>
+                <p class="feedback-tags">#UX/UI</p>
+                <p class="feedback-tags">#Android</p>
+                <p class="feedback-tags">#IOS</p>
+            </div>
+            <div class="div-feedback">
+                <div class="auto-photo"></div>
+                <p class="feedback-name">Мобильное приложение Autoexpert</p>
+                <p class="feedback-decription">Кроссплатформенное мобильное приложение для создания акта осмотра автомобилей. Приложение позволяет пошагово заполнить данные об...</p>
+                <p class="feedback-tags">#QA</p>
+                <p class="feedback-tags">#UX/UI</p>
+                <p class="feedback-tags">#Flutter</p>
+            </div>
+            <div class="div-feedback">
+                <div class="global-photo"></div>
+                <p class="feedback-name">Сервис для проведения турниров...</p>
+                <p class="feedback-decription">Сервис для организации и проведения спортивных турниров. Онлайн регистрация Заполнение таблиц и создание документов с помощью онлайн форм...</p>
+                <p class="feedback-tags">#QA</p>
+                <p class="feedback-tags">#UX/UI</p>
+                <p class="feedback-tags">#web</p>
+            </div>
+        </div>
+        <div class="div-feedbacks">
+            <div class="div-feedback">
+                <div class="raznay-photo"></div>
+                <p class="feedback-name">Викторина "Разная, но единая"</p>
+                <p class="feedback-decription">Сайт-викторина приуроченный ко Дню Конституции РФ. Задача Разработать викторину с интерактивной картой России и озвучкой вопроссо.</p>
+                <p class="feedback-tags">#QA</p>
+                <p class="feedback-tags">#UX/UI</p>
+                <p class="feedback-tags">#web</p>
+            </div>
+            <div class="div-feedback">
+                <div class="medx-photo"></div>
+                <p class="feedback-name">Мобильное приложение Medx.pro</p>
+                <p class="feedback-decription">Мобильное Кроссплатформенное приложение для медицинского образовательного сервиса Medx.pro. Задача ГБУЗ МКНЦ имени А.С. Логинова...</p>
+                <p class="feedback-tags">#QA</p>
+                <p class="feedback-tags">#Flutter</p>
+            </div>
+            <div class="div-feedback">
+                <div class="krch-photo"></div>
+                <p class="feedback-name">Мобильное приложение Короче,...</p>
+                <p class="feedback-decription">Кроссплатформенное приложение для покупки и чтения книг по теме автобизнеса с поддержкой аудиокниг. Задача Нам нужно...</p>
+                <p class="feedback-tags">#QA</p>
+                <p class="feedback-tags">#UX/UI</p>
+                <p class="feedback-tags">#Flutter</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
